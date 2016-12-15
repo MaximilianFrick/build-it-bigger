@@ -1,15 +1,15 @@
 package com.udacity.gradle.builditbigger.android.jokes;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 
 
-public class JokeTellingActivity extends AppCompatActivity {
+public class JokeTellingActivity extends Activity {
 
     public static final String EXTRA_JOKE = "EXTRA_JOKE";
 

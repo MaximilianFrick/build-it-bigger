@@ -4,9 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.udacity.gradle.builditbigger.android.jokes.JokeTellingActivity;
-import com.udacity.gradle.builditbigger.jokes.JokeSupplier;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        startActivity(JokeTellingActivity.newIntent(this, JokeSupplier.getJoke()));
+        new EndpointsAsyncTask(this).execute();
     }
 }
